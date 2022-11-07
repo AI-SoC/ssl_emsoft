@@ -1,0 +1,177 @@
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crti.o
+ .text          0x00000000       0xc8 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+ .bss           0x00000000       0x1c c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+ .init_array    0x00000000        0x4 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+ .fini_array    0x00000000        0x4 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+ .eh_frame      0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+ .jcr           0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+ .tm_clone_table
+                0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+ .ARM.attributes
+                0x00000000       0x29 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+ .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .text          0x00000000       0x14 startup.o
+ .data          0x00000000        0x0 startup.o
+ .bss           0x00000000        0x0 startup.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtend.o
+ .eh_frame      0x00000000        0x4 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtend.o
+ .jcr           0x00000000        0x4 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtend.o
+ .tm_clone_table
+                0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtend.o
+ .ARM.attributes
+                0x00000000       0x29 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x20000000         0x00020000         xrw
+ROM              0x08000000         0x00080000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crti.o
+LOAD c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+LOAD main.o
+LOAD startup.o
+START GROUP
+LOAD c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2\libgcc.a
+LOAD c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/../../../../arm-none-eabi/lib/thumb2\libc.a
+END GROUP
+LOAD c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtend.o
+LOAD c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtn.o
+                0x20020000                _estack = 0x20020000
+
+.isr_vector     0x08000000      0x188
+                0x08000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x188 startup.o
+                0x08000000                g_pfnVectors
+                0x08000188                . = ALIGN (0x4)
+
+.text           0x08000188      0x344
+                0x08000188                . = ALIGN (0x4)
+ *(.text)
+ *(.text*)
+ .text.clk      0x08000188      0x170 main.o
+                0x08000188                clk
+ .text.main     0x080002f8      0x17c main.o
+                0x080002f8                main
+ .text.Reset_Handler
+                0x08000474       0x40 startup.o
+                0x08000474                Reset_Handler
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.eh_frame)
+ *(.init)
+ .init          0x080004b4        0x4 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crti.o
+                0x080004b4                _init
+ .init          0x080004b8        0x8 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtn.o
+ *(.fini)
+ .fini          0x080004c0        0x4 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crti.o
+                0x080004c0                _fini
+ .fini          0x080004c4        0x8 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtn.o
+                0x080004cc                . = ALIGN (0x4)
+                0x080004cc                _etext = .
+
+.vfp11_veneer   0x080004cc        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x080004cc        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x080004cc        0x0
+ .iplt          0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+
+.rel.dyn        0x080004cc        0x0
+ .rel.iplt      0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+
+.rodata         0x080004cc        0x0
+                0x080004cc                . = ALIGN (0x4)
+ *(.rodata)
+ *(.rodata*)
+                0x080004cc                . = ALIGN (0x4)
+                0x080004cc                _sidata = LOADADDR (.data)
+
+.data           0x20000000        0x0 load address 0x080004cc
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdata = .
+ *(.data)
+ *(.data*)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _edata = .
+
+.igot.plt       0x20000000        0x0 load address 0x080004cc
+ .igot.plt      0x00000000        0x0 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtbegin.o
+                0x20000000                . = ALIGN (0x4)
+
+.bss            0x20000000        0x0 load address 0x080004cc
+                0x20000000                _sbss = .
+                0x20000000                __bss_start__ = _sbss
+ *(.bss)
+ *(.bss*)
+ *(COMMON)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _ebss = .
+                0x20000000                __bss_end__ = _ebss
+OUTPUT(out.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x19 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crti.o
+ .ARM.attributes
+                0x00000019       0x39 main.o
+ .ARM.attributes
+                0x00000052       0x21 startup.o
+ .ARM.attributes
+                0x00000073       0x19 c:/program files (x86)/cypress/ez-usb fx3 sdk/1.3/arm gcc/bin/../lib/gcc/arm-none-eabi/4.8.1/thumb2/crtn.o
+
+.comment        0x00000000       0x30
+ .comment       0x00000000       0x30 main.o
+                                 0x31 (size before relaxing)
+
+.debug_info     0x00000000      0x1d4
+ .debug_info    0x00000000      0x1d4 main.o
+
+.debug_abbrev   0x00000000       0x8f
+ .debug_abbrev  0x00000000       0x8f main.o
+
+.debug_aranges  0x00000000       0x28
+ .debug_aranges
+                0x00000000       0x28 main.o
+
+.debug_ranges   0x00000000       0x18
+ .debug_ranges  0x00000000       0x18 main.o
+
+.debug_macro    0x00000000      0xa45
+ .debug_macro   0x00000000       0x1a main.o
+ .debug_macro   0x0000001a      0x886 main.o
+ .debug_macro   0x000008a0      0x1a5 main.o
+
+.debug_line     0x00000000       0x92
+ .debug_line    0x00000000       0x92 main.o
+
+.debug_str      0x00000000     0x2beb
+ .debug_str     0x00000000     0x2beb main.o
+                               0x2bf8 (size before relaxing)
+
+.debug_frame    0x00000000       0x44
+ .debug_frame   0x00000000       0x44 main.o
