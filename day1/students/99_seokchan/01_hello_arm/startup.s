@@ -71,7 +71,7 @@ LoopFillZerobss:
 	bcc	FillZerobss
 
 /* Call the application's entry point.*/
-	bl	main
+	bl	ssl_main
 
 .size	Reset_Handler, .-Reset_Handler
 

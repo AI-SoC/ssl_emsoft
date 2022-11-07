@@ -40,8 +40,8 @@ Discarded input sections
  .ARM.exidx     0x00000000       0x10 c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
  .ARM.attributes
                 0x00000000       0x1c c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
- .group         0x00000000        0x8 main.o
- .group         0x00000000        0x8 main.o
+ .group         0x00000000        0xc main.o
+ .group         0x00000000        0xc main.o
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
@@ -202,53 +202,54 @@ LOAD c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-no
                 0x08000000                g_pfnVectors
                 0x08000188                . = ALIGN (0x4)
 
-.text           0x08000188      0x344
+.text           0x08000188      0x1fc
                 0x08000188                . = ALIGN (0x4)
  *(.text)
  *(.text*)
- .text.clk      0x08000188      0x170 main.o
+ .text.clk      0x08000188       0xd4 main.o
                 0x08000188                clk
- .text.main     0x080002f8      0x17c main.o
-                0x080002f8                main
+ .text.ssl_main
+                0x0800025c       0xd0 main.o
+                0x0800025c                ssl_main
  .text.Reset_Handler
-                0x08000474       0x40 startup.o
-                0x08000474                Reset_Handler
+                0x0800032c       0x40 startup.o
+                0x0800032c                Reset_Handler
  *(.glue_7)
- .glue_7        0x080004b4        0x0 linker stubs
+ .glue_7        0x0800036c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080004b4        0x0 linker stubs
+ .glue_7t       0x0800036c        0x0 linker stubs
  *(.eh_frame)
  *(.init)
- .init          0x080004b4        0x4 c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x080004b4                _init
- .init          0x080004b8        0x8 c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x0800036c        0x4 c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0800036c                _init
+ .init          0x08000370        0x8 c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x080004c0        0x4 c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x080004c0                _fini
- .fini          0x080004c4        0x8 c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x080004cc                . = ALIGN (0x4)
-                0x080004cc                _etext = .
+ .fini          0x08000378        0x4 c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08000378                _fini
+ .fini          0x0800037c        0x8 c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08000384                . = ALIGN (0x4)
+                0x08000384                _etext = .
 
-.vfp11_veneer   0x080004cc        0x0
- .vfp11_veneer  0x080004cc        0x0 linker stubs
+.vfp11_veneer   0x08000384        0x0
+ .vfp11_veneer  0x08000384        0x0 linker stubs
 
-.v4_bx          0x080004cc        0x0
- .v4_bx         0x080004cc        0x0 linker stubs
+.v4_bx          0x08000384        0x0
+ .v4_bx         0x08000384        0x0 linker stubs
 
-.iplt           0x080004cc        0x0
- .iplt          0x080004cc        0x0 main.o
+.iplt           0x08000384        0x0
+ .iplt          0x08000384        0x0 main.o
 
-.rel.dyn        0x080004cc        0x0
- .rel.iplt      0x080004cc        0x0 main.o
+.rel.dyn        0x08000384        0x0
+ .rel.iplt      0x08000384        0x0 main.o
 
-.rodata         0x080004cc        0x0
-                0x080004cc                . = ALIGN (0x4)
+.rodata         0x08000384        0x0
+                0x08000384                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
-                0x080004cc                . = ALIGN (0x4)
-                0x080004cc                _sidata = LOADADDR (.data)
+                0x08000384                . = ALIGN (0x4)
+                0x08000384                _sidata = LOADADDR (.data)
 
-.data           0x20000000        0x0 load address 0x080004cc
+.data           0x20000000        0x0 load address 0x08000384
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -256,11 +257,11 @@ LOAD c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-no
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _edata = .
 
-.igot.plt       0x20000000        0x0 load address 0x080004cc
+.igot.plt       0x20000000        0x0 load address 0x08000384
  .igot.plt      0x20000000        0x0 main.o
                 0x20000000                . = ALIGN (0x4)
 
-.bss            0x20000000        0x0 load address 0x080004cc
+.bss            0x20000000        0x0 load address 0x08000384
                 0x20000000                _sbss = .
                 0x20000000                __bss_start__ = _sbss
  *(.bss)
@@ -273,25 +274,25 @@ OUTPUT(out.elf elf32-littlearm)
 LOAD linker stubs
 
 .ARM.attributes
-                0x00000000       0x2e
+                0x00000000       0x30
  .ARM.attributes
                 0x00000000       0x1e c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
  .ARM.attributes
-                0x0000001e       0x39 main.o
+                0x0000001e       0x34 main.o
  .ARM.attributes
-                0x00000057       0x21 startup.o
+                0x00000052       0x21 startup.o
  .ARM.attributes
-                0x00000078       0x1e c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x00000073       0x1e c:/program files (x86)/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
 
-.comment        0x00000000       0x30
- .comment       0x00000000       0x30 main.o
-                                 0x31 (size before relaxing)
+.comment        0x00000000       0x49
+ .comment       0x00000000       0x49 main.o
+                                 0x4a (size before relaxing)
 
-.debug_info     0x00000000      0x1d4
- .debug_info    0x00000000      0x1d4 main.o
+.debug_info     0x00000000      0x1f5
+ .debug_info    0x00000000      0x1f5 main.o
 
-.debug_abbrev   0x00000000       0x8f
- .debug_abbrev  0x00000000       0x8f main.o
+.debug_abbrev   0x00000000       0x99
+ .debug_abbrev  0x00000000       0x99 main.o
 
 .debug_aranges  0x00000000       0x28
  .debug_aranges
@@ -300,17 +301,17 @@ LOAD linker stubs
 .debug_ranges   0x00000000       0x18
  .debug_ranges  0x00000000       0x18 main.o
 
-.debug_macro    0x00000000      0xa45
+.debug_macro    0x00000000      0xc4f
  .debug_macro   0x00000000       0x1a main.o
- .debug_macro   0x0000001a      0x886 main.o
- .debug_macro   0x000008a0      0x1a5 main.o
+ .debug_macro   0x0000001a      0xa90 main.o
+ .debug_macro   0x00000aaa      0x1a5 main.o
 
-.debug_line     0x00000000       0x92
- .debug_line    0x00000000       0x92 main.o
+.debug_line     0x00000000       0xfb
+ .debug_line    0x00000000       0xfb main.o
 
-.debug_str      0x00000000     0x2beb
- .debug_str     0x00000000     0x2beb main.o
-                               0x2bf8 (size before relaxing)
+.debug_str      0x00000000     0x34c9
+ .debug_str     0x00000000     0x34c9 main.o
+                               0x34d6 (size before relaxing)
 
-.debug_frame    0x00000000       0x44
- .debug_frame   0x00000000       0x44 main.o
+.debug_frame    0x00000000       0x4c
+ .debug_frame   0x00000000       0x4c main.o

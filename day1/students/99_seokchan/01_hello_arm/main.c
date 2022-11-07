@@ -28,7 +28,7 @@ void clk(void)
 	RCC_CFGR |= (1<<15); // set APB2 div2	
 }
 
-int main (void) {
+int ssl_main (void) {
 	
 	clk();
 	
