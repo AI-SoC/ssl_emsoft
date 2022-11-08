@@ -16,7 +16,7 @@
 **
 **  Target      : STMicroelectronics STM32
 **
-**  Distribution: The file is distributed “as is,” without any warranty
+**  Distribution: The file is distributed ï¿½as is,ï¿½ without any warranty
 **                of any kind.
 **
 *****************************************************************************
@@ -60,9 +60,10 @@ MEMORY
 {
   RAM (xrw)		: ORIGIN = 0x20000000, LENGTH = 128K
   ROM (rx)		: ORIGIN = 0x8000000, LENGTH = 512K
+  //SSL_WTB (rx) : ORIGIN = xxxxxxxxxxxxxx
 }
 
-/* Sections */
+/* Sections : start point ( address 0 ) */
 SECTIONS
 {
   /* The startup code into ROM memory */
