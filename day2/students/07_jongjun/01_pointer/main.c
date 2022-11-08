@@ -3,7 +3,11 @@
 int main() {
     printf("Running...\n");
 
+    int a = 0x12345678;
 
+    int* ap = &a;
+    printf("a is 0x%8X at %p\n", *ap, ap);
+    char* abp = (char*)&a;
 
     return 0;
 }
