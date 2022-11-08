@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    printf("Running...\n")  ;
+    printf("Running...\n")  ; 
 
     int a = 0x12345678      ;
 
