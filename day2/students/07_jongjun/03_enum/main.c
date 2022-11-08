@@ -29,5 +29,14 @@ int main() {
     }
     while (get_adc_status() != EOC); // blocking
 
+#ifdef HW_REG
+    // #define ACC_MODE (*(unsigned char*)(0xB0000000))
+#else
+    unsigned char ACC_MODE = 0;
+#endif
+    ACC_MODE = 0;
+    ACC_MODE |= ACC_EN;
+    ACC_MODE |= ADC_ST;
+
     return 0;
 }
